@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto Mono&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="./Assets/Images/sunny-icon.png"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="C:\Users\camer\OneDrive\Desktop\Cams HWs\Weather Dashboard App\weatherdashboard.css"/>
+  <title>Weekly Forcasts</title>
+</head>
+
+<nav class="navbar navbar-dark bg-dark">
+  <h1 class="display-4"><img class="icon" src="./Assets/Images/Title_Sun.png"> Current Weather and 5 Day Forecast <img class="icon" src="./Assets/Images/Title_Rain.png"> </h1>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3" id="citySearch">
+      <div class="card" id="locationOptions">
+        <div class="card-header">
+          <div class="form-group" method="POST" id="form-group" data-list="list">
+            <label for="inputdefault"><strong>Search for a city:</strong></label>
+            <form class="example">
+              <input type="text" placeholder="Search.." id="cityNameSearch">
+              <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+              <button id ="clear" class="clearBtn clearBtn:Hover"><strong>Clear Recent Searches</strong></button>
+            </form>
+          </div>
+          <h5 class="popularSearches"><strong>Recent Searches:</strong></h5>
+          <ul id="searchHistoryList"></ul>
+          <div class="span2">
+            <h5 class="popularSearches"><strong>Popular Cities</strong></h5>
+            <p><button class="btn btn-primary btn-block newCityBtn" id="oakland"><strong>Oakland</strong></button></p>
+            <p><button class="btn btn-primary btn-block newCityBtn" id="houston"><strong>Houston</strong></button></p>
+            <p><button class="btn btn-primary btn-block newCityBtn" id="newyorkcity"><strong>New York</strong></button></p>
+            <p><button class="btn btn-primary btn-block newCityBtn" id="Santa Barbara"><strong>Santa Barbara</strong></button></p>
+            <p><button class="btn btn-primary btn-block newCityBtn" id="Milwaukee"><strong>Milwaukee</strong></button></p>
+            <p><button class="btn btn-primary btn-block newCityBtn" id="losAngeles"><strong>Los Angeles</strong></button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8" id="currentLocation">
+      <div class="card text-center" id="currentWeather">
+        <div class="card-header2" id="currentDay"></div>
+        <h3 class="city" id="city">City: </h3>
+        <img id="weatherIcon" class="weatherIcon"></img>
+        <h4 class="temp" id="temp">Temp: </h4>
+        <h4 class="humidity" id="humidity">Humidity: </h4>
+        <h4 class="windSpeed" id="windSpeed">Wind Speed: </h4>
+        <h4 class="uvIndex" id="uvIndex">UV Index: </h4>
+      </div>
+      <hr class="d-sm-none">
+      <div class="row-2">
+        <div class="col-sm-12" id="fiveTwo">
+          <h5 class="fiveDayForecast">5 Day Forecast </h5>
+          <div class="card-deck">
+            <div class="card" id="fivedayCardsTwo">
+              <div class="card-body">
+                <h5 id="dayTwo"></h5>
+                <img id="weatherIconTwo" id="weatherIconTwo"></img>
+                <p class="temp" id="tempTwo">Temp: </p>
+                <p class="humid" id="humidTwo">Humidity: </p>
+              </div>
+            </div>
+            <div class="card" id="fivedayCardsThree">
+              <div class="card-body">
+                <h5 id="dayThree"></h5>
+                <img id="weatherIconThree" id="weatherThree"></img>
+                <p class="temp" id="tempThree">Temp: </p>
+                <p class="humid" id="humidThree">Humidity: </p>
+              </div>
+            </div>
+            <div class="card" id="fivedayCardsFour">
+              <div class="card-body">
+                <h5 id="dayFour"></h5>
+                <img id="weatherIconFour" id="weatherIconFour"></img>
+                <p class="temp" id="tempFour">Temp: </p>
+                <p class="humid" id="humidFour">Humidity: </p>
+              </div>
+            </div>
+            <div class="card" id="fivedayCardsFive">
+              <div class="card-body">
+                <h5 id="dayFive"></h5>
+                <img id="weatherIconFive" id="weatherIconFive"></img>
+                <p class="temp" id="tempFive">Temp: </p>
+                <p class="humid" id="humidFive">Humidity: </p>
+              </div>
+            </div>
+            <div class="card" id="fivedayCardsSix">
+              <div class="card-body">
+                <h5 id="daySix"></h5>
+                <img id="weatherIconSix" id="weatherIconSix"></img>
+                <p class="temp" id="tempSix">Temp: </p>
+                <p class="humid" id="humidSix">Humidity:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer><p><strong> Created by <a href="https://github.com/CMRushing">Cameron R.<i class="fas fa-grin-beam-sweat"> </i></a></strong></p></footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="C:\Users\camer\OneDrive\Desktop\Cams HWs\Weather Dashboard App\weatherdashboard.js"></script>
+</body>
+
+</html>

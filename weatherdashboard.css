@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Roboto Mono&display=swap');
+  
+  body {
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    height: 600px;
+    font-family: 'Roboto Mono', sans-serif;
+    background-position: top center !important;
+    background-size: cover;
+    background-color: #84f08027;
+  }
+  
+  /* The navigation bar */
+  .navbar {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0 auto;
+    height: 80px;
+  }
+  .navbar-dark {
+    background-color: aqua !important;
+    height: 85px;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 4px rgb(168, 167, 167);
+  }
+  
+  .display-4 {
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  
+  .col-md-8 {
+    height: 100%;
+    margin-top: 20px;
+    padding-top: 35px;
+    margin: 0 auto;
+    
+  }
+  
+  .card-deck {
+    margin: 0 auto;
+    padding-top: 10px;
+    
+    
+  }
+  
+  #citySearch {
+    padding-top: 35px;
+    color: #1aca23 !important;
+    height: flex;
+    margin-left: 8px;
+  }
+  
+  .col-sm-12 {
+    margin: 0 auto;
+    background-color:blue;
+    height: flex;
+    padding-bottom: 20px;
+    border: 1px solid paleturquoise;
+    box-shadow: 5px 5px 5px 2px rgb(168, 166, 166)
+    
+  }
+  
+  .list-group-item {
+    color: #000000;
+  }
+  
+  .card {
+    background-color: #8780f0;
+    color: rgb(0, 0, 0);
+    border: 1px solid #2f079e;
+    box-shadow: 5px 5px 5px 2px rgb(168, 166, 166)
+  }
+  
+  .btn {
+    background-color:	#63a3ce; 
+    border: none;
+    color: black;
+    text-align: center;
+    cursor: pointer; /* Pointer/hand icon */
+    width: flex;
+    display: block; /* Make the buttons appear below each other */
+    box-shadow: 2px 5px 2px 1px rgb(168, 166, 166);
+  }
+  
+  .btn:focus, .btn:active {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .btn:hover {
+    background-color: #073c9e;
+    color: rgb(17, 166, 211);
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    float: left;
+    width: 99%;
+    background: #41d1db;
+    border: 1px solid #16079e;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 1px rgb(133, 130, 130);
+  }
+  
+  form.example button {
+    float: right;
+    width: 99.5%;
+    padding: 3px;
+    margin: 2px !important;
+    background: rgba(194, 191, 191, 0.781);
+    border: 1px solid #0d0579;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 1px rgb(133, 130, 130);
+    cursor: pointer;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  
+  form.example button:hover {
+    color: #3987c7;
+    border: none;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .form-group {
+    text-align: center;
+    
+  }
+  
+  .card-header2 {
+    background: #07629e;
+    padding-top: 10px;
+    height: 45px;
+  }
+  
+  .card-header3 {
+    padding-top: 10px;
+  }
+  
+  h5 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 15px;
+  
+  }
+  
+  .fiveDayForecast {
+    padding-top: 15px;
+  }
+  
+  .city {
+    padding-top: 20px;
+  }
+  
+  .uvIndex {
+    padding-bottom: 20px;  
+  }
+  
+  button {
+  border: none;
+  background: #0949d3;
+  color: rgb(121, 185, 204);
+  margin: 1px;
+  }
+  
+  .button:focus, .button:active {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #000000;
+    text-align: center;
+    text-shadow: 4px 4px 4px rgb(141, 140, 140);
+    color: #033092;
+    
+  }
+  
+  #weatherIcon {
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  .temp {
+  margin: 0 auto;
+  text-align: center;
+  }
+  
+  .humid {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #weatherIconTwo {
+    width: 100%;
+    height: auto;
+  }
+  
+  #weatherIconThree {
+    width: 100%;
+    height: auto;
+  }
+  
+  #weatherIconFour {
+    width: 100%;
+    height: auto;
+  }
+  
+  #weatherIconFive {
+    width: 100%;
+    height: auto;
+  }
+  
+  #weatherIconSix {
+    width: 100%;
+    height: auto;
+  }
